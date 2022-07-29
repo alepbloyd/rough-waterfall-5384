@@ -1,0 +1,16 @@
+<h1> Customer Show Page </h1>
+
+<div id="customer-supermarket">
+  Customer supermarket: <%= @customer.supermarket.name %>
+</div>
+
+<div id="all-items">
+
+  <% @customer.items.each do |item|%>
+    <div id="item-<%=item.id%>">
+      <p>Item Name: <%= item.name%></p>
+      <p>Item Price: <%= item.price%></p>
+    </div>
+  <% end %>
+
+</div>
