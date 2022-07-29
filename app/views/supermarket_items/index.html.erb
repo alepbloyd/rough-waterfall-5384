@@ -1,0 +1,9 @@
+<h1> Supermarket Items Index </h1>
+
+<div id="supermarket-items">
+
+  <% @supermarket.unique_item_names.each do |item_name| %>
+    <p> Item Name: <%= item_name %></p>
+  <% end %>
+
+</div>

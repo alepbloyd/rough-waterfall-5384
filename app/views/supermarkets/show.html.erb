@@ -1,0 +1,9 @@
+<h1> Supermarket Show Page </h1>
+
+<div id="supermarket-name">
+  Supermarket Name: <%= @supermarket.name %>
+</div>
+
+<div id="view-all-items-link">
+  <%= link_to "View All Items", "/supermarkets/#{@supermarket.id}/items"%>
+</div>
