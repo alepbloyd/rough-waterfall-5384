@@ -3,4 +3,9 @@ class Customer < ApplicationRecord
 
   has_many :customer_items
   has_many :items, through: :customer_items
+
+  def total_price
+    self.items.sum(:price)
+  end
+
 end
