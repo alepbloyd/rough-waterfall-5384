@@ -1,3 +1,7 @@
+Initial commit: 4:33 PM EST
+
+Ending: 6:47 PM EST
+
 # Supermarket Sweep
 
 Fork this repository and clone your newly created repository. At the end of the challenge, push your code to your repository and DM all of the instructors with the link to your repository.
