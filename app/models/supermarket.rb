@@ -6,4 +6,8 @@ class Supermarket < ApplicationRecord
   def unique_item_names
     self.items.pluck(:name).uniq
   end
+
+  def top_three_items
+    self.items.group(:customer_id).count
+  end
 end

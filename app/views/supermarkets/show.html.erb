@@ -7,3 +7,12 @@
 <div id="view-all-items-link">
   <%= link_to "View All Items", "/supermarkets/#{@supermarket.id}/items"%>
 </div>
+
+<div id="popular-items">
+  <% @supermarket.top_three_items.each_with_index do |item,index|%>
+    <p id="popular-item-<%=index+1%>">
+      <%= item %>
+    </p>
+  <% end %>
+
+</div>
